@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import App from './App';
 import Header from './header';
 import Footer from './footer';
@@ -11,12 +11,12 @@ const routing = (
     <div>
       <Header />
       <hr />
-      <Switch>
+      <Routes>
         <Route exact path="/" component={App} />
         <Route path="/users" component={Users} />
         <Route path="/contact" component={Contact} />
         <Route component={Notfound} />
-      </Switch>
+      </Routes>
       <Footer />
     </div>
   </Router>

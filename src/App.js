@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-<p>I have edited the page</p>
+<p>I have edited the page again there should be a header and footer</p>
       </header>
     </div>
   );
